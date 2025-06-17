@@ -1,0 +1,6 @@
+parm active_site.prmtop
+trajin active_site.nc 1 last
+#trajin filtered2_active_site.nc 1 last
+
+reference 1sg8_active_site.pdb
+rms fit @CA,C ref 1sg8_active_site.pdb out rmsd.agr

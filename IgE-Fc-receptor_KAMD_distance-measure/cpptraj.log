@@ -1,0 +1,6 @@
+# 03/10/25 16:54:26
+parm ../complex.prmtop
+trajin ../complex.inpcrd
+distance dist1 :263,578 :577,893 out dist1.agr
+run
+quit

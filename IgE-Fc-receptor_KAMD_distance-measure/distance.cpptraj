@@ -1,0 +1,17 @@
+parm ../sample_1/stripped.prmtop
+
+#trajin ../sample_1/stripped.nc 1 700
+#trajin ../sample_2/stripped.nc 1 500
+#trajin ../sample_3/stripped.nc 1 1000
+#trajin ../sample_4/stripped.nc 1 1000
+#trajin ../sample_5/stripped.nc 1 1000
+#trajin ../sample_6/stripped.nc 1 300
+#trajin ../sample_7/stripped.nc 1 1000
+#trajin ../sample_8/stripped.nc 1 1000
+#trajin ../sample_9/stripped.nc 1 1000
+#trajin ../sample_10/stripped.nc 1 1000
+
+trajin ../../MD/sample_*/stripped.nc
+
+distance dist1 :263,578 :577,893 out distance1.dat
+distance dist2 :263 :578 out distance2.dat 

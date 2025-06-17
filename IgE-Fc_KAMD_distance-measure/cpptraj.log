@@ -1,0 +1,12 @@
+# 03/10/25 16:50:35
+parm ../complex.prmtop
+trajin ../complex.inpcrd
+distance dist1 :2,323 :316,638
+run
+quit
+# 03/10/25 16:53:23
+parm ../complex.prmtop
+trajin ../complex.inpcrd
+distance dist1 :2,323 :316,638 out dist1.agr
+run
+quit

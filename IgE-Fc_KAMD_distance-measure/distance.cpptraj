@@ -1,0 +1,7 @@
+parm ../sample_1/stripped.prmtop
+
+#trajin ../../KAMD/sample_*/stripped.nc
+trajin ../../MD/sample_*/stripped.nc
+
+distance dist1 :2,323 :316,638 out distance1_md.dat
+distance dist2 :2 :323 out distance2_md.dat 
