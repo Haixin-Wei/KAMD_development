@@ -1,0 +1,7 @@
+parm stripped.prmtop
+trajin ../sample*/mdcrd 1 10000
+multidihedral Myphi phi out phi.agr
+multidihedral Mypsi psi out psi.agr
+run
+hist Myphi[phi]:2 Mypsi[psi]:2 min -180 max 180 bins 72 free 300 out hist.gnu
+run

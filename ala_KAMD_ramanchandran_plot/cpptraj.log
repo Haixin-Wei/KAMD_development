@@ -1,0 +1,23 @@
+# 01/30/25 22:09:31
+parm ../sample_1/complex.prmtop
+quit
+# 01/30/25 22:17:09
+parm ../complex.prmtop
+parmstrip !(@22)
+quit
+# 01/30/25 22:17:52
+parm ../complex.prmtop
+parmstrip !(@1-22)
+parmout stripped.prmtop
+out stripped.prmtop
+parm out stripped.prmtop
+quit
+# 01/30/25 22:19:22
+parm ../complex.prmtop
+parmstrip !(@1-22) out stripped.prmtop
+quit
+# 01/30/25 22:20:36
+parm ../complex.prmtop
+parmstrip !(@1-22)
+parmwrite out stripped.prmtop
+quit

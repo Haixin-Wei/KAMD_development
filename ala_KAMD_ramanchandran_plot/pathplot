@@ -1,0 +1,9 @@
+figure(1);
+hold on;
+length1 = 1000;
+for i = 1: 1000000 - length1
+    if (abs(kamd_phi[i] - (-70)) < 1 && abs(kamd_psi[i] - (130)) < 1))
+        plot(kamd_phi[i:i+length1],kamd_psi[i:i+length1]);
+        i = i + length1;
+    end
+end
