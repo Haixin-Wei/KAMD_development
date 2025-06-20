@@ -1,0 +1,6 @@
+parm ../sample_1/stripped.prmtop
+trajin ../sample_*/stripped.nc 1 last 10
+
+rms fit :1-198&!@H= first out rmsd.dat
+rms ligand :199&!@H= first out rmsd.dat nofit
+#trajout alltogether.nc
